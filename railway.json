@@ -1,0 +1,90 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "services": [
+    {
+      "name": "telegram-gift-api",
+      "source": {
+        "root": "telegram-gift-api"
+      },
+      "ports": [
+        {
+          "port": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "variables": {
+        "API_ID": "your_api_id",
+        "API_HASH": "your_api_hash",
+        "BOT_TOKEN": "your_bot_token",
+        "SESSION_DIR": "/app/sessions"
+      },
+      "healthcheck": {
+        "path": "/docs"
+      }
+    },
+    {
+      "name": "tonsend",
+      "source": {
+        "root": "tonsend"
+      },
+      "ports": [
+        {
+          "port": 8001,
+          "protocol": "tcp"
+        }
+      ],
+      "variables": {},
+      "healthcheck": {
+        "path": "/docs"
+      }
+    },
+    {
+      "name": "usdtsend",
+      "source": {
+        "root": "usdtsend"
+      },
+      "ports": [
+        {
+          "port": 8002,
+          "protocol": "tcp"
+        }
+      ],
+      "variables": {},
+      "healthcheck": {
+        "path": "/health"
+      }
+    },
+    {
+      "name": "checkdetails",
+      "source": {
+        "root": "checkdetails"
+      },
+      "ports": [
+        {
+          "port": 8003,
+          "protocol": "tcp"
+        }
+      ],
+      "variables": {},
+      "healthcheck": {
+        "path": "/"
+      }
+    },
+    {
+      "name": "zenwallet",
+      "source": {
+        "root": "zenwallet"
+      },
+      "ports": [
+        {
+          "port": 8004,
+          "protocol": "tcp"
+        }
+      ],
+      "variables": {},
+      "healthcheck": {
+        "path": "/health"
+      }
+    }
+  ]
+}

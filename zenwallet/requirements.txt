@@ -1,0 +1,7 @@
+flask
+requests
+web3
+tonutils
+ton-core
+tonsdk
+gunicorn
