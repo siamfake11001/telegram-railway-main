@@ -13,9 +13,9 @@
         }
       ],
       "variables": {
-        "API_ID": "your_api_id",
-        "API_HASH": "your_api_hash",
-        "BOT_TOKEN": "your_bot_token",
+        "API_ID": "35648548",
+        "API_HASH": "7cb954d06d962e181fb1717fe1a486a8",
+        "BOT_TOKEN": "8615958250:AAHlWEzrAPA9ESJXCTA_7QP5eOr0O3HLTqw",
         "SESSION_DIR": "/app/sessions"
       },
       "healthcheck": {
