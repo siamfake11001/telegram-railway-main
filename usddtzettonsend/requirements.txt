@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+web3
+ton-core
+tonutils
+pytoniq-core
+pydantic
+aiohttp
