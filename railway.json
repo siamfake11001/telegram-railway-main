@@ -85,6 +85,22 @@
       "healthcheck": {
         "path": "/health"
       }
+    },
+    {
+      "name": "usddtzettonsend",
+      "source": {
+        "root": "usddtzettonsend"
+      },
+      "ports": [
+        {
+          "port": 8005,
+          "protocol": "tcp"
+        }
+      ],
+      "variables": {},
+      "healthcheck": {
+        "path": "/docs"
+      }
     }
   ]
 }
